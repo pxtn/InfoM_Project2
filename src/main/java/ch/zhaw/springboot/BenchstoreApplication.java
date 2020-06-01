@@ -12,8 +12,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @SpringBootApplication stellt sicher, dass diese Klasse die SpringBoot-Applikation automatisch konfiguriert und vieles mehr. Details: https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#using-boot-using-springbootapplication-annotation
  */
 @SpringBootApplication
-public class InfMApplication {
+public class BenchstoreApplication {
     public static void main(String[] args) {
-        SpringApplication.run(InfMApplication.class, args);
+        SpringApplication.run(BenchstoreApplication.class, args);
     }
 }
