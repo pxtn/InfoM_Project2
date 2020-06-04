@@ -1,7 +1,7 @@
 package ch.zhaw.springboot.entities;
 
 import javax.persistence.*;
-import java.time.LocalDateTime;
+import java.sql.Date;
 
 @Entity
 public class Figure {
@@ -13,12 +13,12 @@ public class Figure {
 	private double income;
 	private double expenses;
 	private double advertisementExpenses;
-	private LocalDateTime date;
+	private Date date;
 
 	@ManyToOne
 	private Business business;
 
-	public Figure(double income, double expenses, double advertisementExpenses, LocalDateTime date, Business business) {
+	public Figure(double income, double expenses, double advertisementExpenses, Date date, Business business) {
 		this.income = income;
 		this.expenses = expenses;
 		this.advertisementExpenses = advertisementExpenses;
@@ -41,7 +41,7 @@ public class Figure {
 		return this.advertisementExpenses;
 	}
 
-	public LocalDateTime getDate() {
+	public Date getDate() {
 		return this.date;
 	}
 

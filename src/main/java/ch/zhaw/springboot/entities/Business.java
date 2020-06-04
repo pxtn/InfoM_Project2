@@ -19,11 +19,15 @@ public class Business {
 	@ManyToMany
 	List<Order> orders = new ArrayList<Order>();
 
-	public Business(String name, String address, long employeeCount, long retailSpace) {
+	@ManyToOne
+	private Owner owner;
+
+	public Business(String name, String address, long employeeCount, long retailSpace, Owner owner) {
 		this.name = name;
 		this.address = address;
 		this.employeeCount = employeeCount;
 		this.retailSpace = retailSpace;
+		this.owner = owner;
 	}
 
 	public Business() {
@@ -51,5 +55,9 @@ public class Business {
 
 	public List<Order> getOrders() {
 		return orders;
+	}
+
+	public Owner getOwner() {
+		return owner;
 	}
 }

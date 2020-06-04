@@ -1,9 +1,9 @@
 package ch.zhaw.springboot.entities;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.sql.Date;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 public class Person {
@@ -13,22 +13,33 @@ public class Person {
 	private long id;
 
 	private String name;
-	private long birthdate;
+	private String surname;
+	private String address;
+	private Date birthDate;
 
-	public Person(String name, long birthdate) {
+	public Person(String name, String surname, String address, Date birthDate) {
 		this.name = name;
-		this.birthdate = birthdate;
+		this.surname = surname;
+		this.address = address;
+		this.birthDate = birthDate;
 	}
 
 	public Person() {
-
 	}
 
 	public String getName() {
-		return this.name;
+		return name;
 	}
 
-	public long getBirthdate() {
-		return this.birthdate;
+	public String getSurname() {
+		return surname;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public Date getBirthDate() {
+		return birthDate;
 	}
 }

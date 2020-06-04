@@ -1,7 +1,7 @@
 package ch.zhaw.springboot.entities;
 
 import javax.persistence.*;
-import java.time.LocalDateTime;
+import java.sql.Date;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,18 +13,22 @@ public class Order {
 	private long id;
 
 	private String initiator;
-	private LocalDateTime dateOfOrder;
-	private LocalDateTime dateOfDelivery;
+	private Date dateOfOrder;
+	private Date dateOfDelivery;
 
 	@ManyToMany
 	List<Product> products = new ArrayList<Product>();
 	@ManyToMany
 	List<Business> businesses = new ArrayList<Business>();
 
-	public Order(String initiator, LocalDateTime dateOfOrder, LocalDateTime dateOfDelivery) {
+	@ManyToOne
+	private Customer customer;
+
+	public Order(String initiator, Date dateOfOrder, Date dateOfDelivery, Customer customer) {
 		this.initiator = initiator;
 		this.dateOfOrder = dateOfOrder;
 		this.dateOfDelivery = dateOfDelivery;
+		this.customer = customer;
 	}
 
 	public Order() {
@@ -34,11 +38,11 @@ public class Order {
 		return this.initiator;
 	}
 
-	public LocalDateTime getDateOfOrder() {
+	public Date getDateOfOrder() {
 		return this.dateOfOrder;
 	}
 
-	public LocalDateTime getDateOfDelivery() {
+	public Date getDateOfDelivery() {
 		return this.dateOfDelivery;
 	}
 
@@ -56,5 +60,9 @@ public class Order {
 
 	public List<Business> getBusinesses() {
 		return businesses;
+	}
+
+	public Customer getCustomer() {
+		return customer;
 	}
 }
