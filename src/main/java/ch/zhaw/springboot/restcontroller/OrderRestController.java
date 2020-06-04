@@ -5,9 +5,7 @@ import ch.zhaw.springboot.repositories.OrderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -26,5 +24,16 @@ public class OrderRestController {
 		} else {
 			return new ResponseEntity<List<Order>>(HttpStatus.NOT_FOUND);
 		}
+	}
+
+
+	@RequestMapping(value = "benchstore/orders", method = RequestMethod.POST)
+	Order newOrder(@RequestBody Order newOrder) {
+		return repository.save(newOrder);
+	}
+
+	@RequestMapping(value = "benchstore/orders/{id}", method = RequestMethod.DELETE)
+	public void deleteOrder(@PathVariable Long id) {
+		repository.deleteById(id);
 	}
 }

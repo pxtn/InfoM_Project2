@@ -17,6 +17,7 @@ public class Order {
 
 	@ManyToMany(mappedBy = "orders")
 	List<Product> products = new ArrayList<Product>();
+	
 	@ManyToMany(mappedBy = "orders")
 	List<Business> businesses = new ArrayList<Business>();
 

@@ -5,9 +5,7 @@ import ch.zhaw.springboot.repositories.SupplierRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -26,5 +24,15 @@ public class SupplierRestController {
 		} else {
 			return new ResponseEntity<List<Supplier>>(HttpStatus.NOT_FOUND);
 		}
+	}
+
+	@RequestMapping(value = "benchstore/suppliers", method = RequestMethod.POST)
+	Supplier newSupplier(@RequestBody Supplier newSupplier) {
+		return repository.save(newSupplier);
+	}
+
+	@RequestMapping(value = "benchstore/suppliers/{id}", method = RequestMethod.DELETE)
+	public void deleteSupplier(@PathVariable Long id) {
+		repository.deleteById(id);
 	}
 }
