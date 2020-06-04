@@ -8,6 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 public class BusinessRestController {
@@ -26,12 +27,17 @@ public class BusinessRestController {
 		}
 	}
 
-	@RequestMapping(value = "benchstore/businesses", method = RequestMethod.POST)
-	Business newBusiness(@RequestBody Business newBusiness) {
-		return repository.save(newBusiness);
+	@RequestMapping(value = "benchstore/business/{id}", method = RequestMethod.GET)
+	public Optional<Business> getBusinessById(@PathVariable Long id) {
+		return repository.findById(id);
 	}
 
-	@RequestMapping(value = "benchstore/businesses/{id}", method = RequestMethod.DELETE)
+	@RequestMapping(value = "benchstore/business/add", method = RequestMethod.POST)
+	public ResponseEntity<Business>  newBusiness(@RequestBody Business newBusiness) {
+		return new ResponseEntity<Business>(repository.save(newBusiness), HttpStatus.CREATED);
+	}
+
+	@RequestMapping(value = "benchstore/business/{id}", method = RequestMethod.DELETE)
 	public void deleteBusiness(@PathVariable Long id) {
 		repository.deleteById(id);
 	}

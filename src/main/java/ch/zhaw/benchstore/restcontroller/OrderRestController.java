@@ -8,6 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 public class OrderRestController {
@@ -26,13 +27,39 @@ public class OrderRestController {
 		}
 	}
 
+	@RequestMapping(value = "benchstore/orders/delayed", method = RequestMethod.GET)
+	public ResponseEntity<List<Order>> getDelayedOrders() {
+		List<Order> result = this.repository.getDelayedOrders();
 
-	@RequestMapping(value = "benchstore/orders", method = RequestMethod.POST)
-	Order newOrder(@RequestBody Order newOrder) {
-		return repository.save(newOrder);
+		if (!result.isEmpty()) {
+			return new ResponseEntity<List<Order>>(result, HttpStatus.OK);
+		} else {
+			return new ResponseEntity<List<Order>>(HttpStatus.NOT_FOUND);
+		}
 	}
 
-	@RequestMapping(value = "benchstore/orders/{id}", method = RequestMethod.DELETE)
+	@RequestMapping(value = "benchstore/orders/{customer_id}", method = RequestMethod.GET)
+	public ResponseEntity<List<Order>> getOrdersFromCustomerWithId(@PathVariable Long customer_id) {
+		List<Order> result = this.repository.getOrdersFromCustomerWithId(customer_id);
+
+		if (!result.isEmpty()) {
+			return new ResponseEntity<List<Order>>(result, HttpStatus.OK);
+		} else {
+			return new ResponseEntity<List<Order>>(HttpStatus.NOT_FOUND);
+		}
+	}
+
+	@RequestMapping(value = "benchstore/order/{id}", method = RequestMethod.GET)
+	public Optional<Order> getOrderById(@PathVariable Long id) {
+		return repository.findById(id);
+	}
+
+	@RequestMapping(value = "benchstore/order/add", method = RequestMethod.POST)
+	public ResponseEntity<Order>  newOrder(@RequestBody Order newOrder) {
+		return new ResponseEntity<Order>(repository.save(newOrder), HttpStatus.CREATED);
+	}
+
+	@RequestMapping(value = "benchstore/order/{id}", method = RequestMethod.DELETE)
 	public void deleteOrder(@PathVariable Long id) {
 		repository.deleteById(id);
 	}

@@ -8,6 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 public class SupplierRestController {
@@ -26,12 +27,17 @@ public class SupplierRestController {
 		}
 	}
 
-	@RequestMapping(value = "benchstore/suppliers", method = RequestMethod.POST)
-	Supplier newSupplier(@RequestBody Supplier newSupplier) {
-		return repository.save(newSupplier);
+	@RequestMapping(value = "benchstore/supplier/{id}", method = RequestMethod.GET)
+	public Optional<Supplier> getSupplierById(@PathVariable Long id) {
+		return repository.findById(id);
 	}
 
-	@RequestMapping(value = "benchstore/suppliers/{id}", method = RequestMethod.DELETE)
+	@RequestMapping(value = "benchstore/supplier/add", method = RequestMethod.POST)
+	public ResponseEntity<Supplier>  newSupplier(@RequestBody Supplier newSupplier) {
+		return new ResponseEntity<Supplier>(repository.save(newSupplier), HttpStatus.CREATED);
+	}
+
+	@RequestMapping(value = "benchstore/supplier/{id}", method = RequestMethod.DELETE)
 	public void deleteSupplier(@PathVariable Long id) {
 		repository.deleteById(id);
 	}
