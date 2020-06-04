@@ -1,7 +1,7 @@
-package ch.zhaw.springboot.restcontroller;
+package ch.zhaw.benchstore.restcontroller;
 
-import ch.zhaw.springboot.entities.Supplier;
-import ch.zhaw.springboot.repositories.SupplierRepository;
+import ch.zhaw.benchstore.entities.Supplier;
+import ch.zhaw.benchstore.repositories.SupplierRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -1,4 +1,4 @@
-package ch.zhaw.springboot.entities;
+package ch.zhaw.benchstore.entities;
 
 import javax.persistence.*;
 import java.sql.Date;

@@ -1,7 +1,7 @@
-package ch.zhaw.springboot.restcontroller;
+package ch.zhaw.benchstore.restcontroller;
 
-import ch.zhaw.springboot.entities.Figure;
-import ch.zhaw.springboot.repositories.FigureRepository;
+import ch.zhaw.benchstore.entities.Figure;
+import ch.zhaw.benchstore.repositories.FigureRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
