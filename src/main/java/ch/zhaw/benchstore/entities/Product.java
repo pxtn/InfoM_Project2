@@ -14,9 +14,17 @@ public class Product {
 	private String name;
 	private double price;
 
-	@ManyToMany
+	@ManyToMany(cascade = {
+			CascadeType.PERSIST,
+			CascadeType.MERGE
+	})
+	@JoinTable(
+			name = "product_supplier",
+			joinColumns = @JoinColumn(name = "product_id"),
+			inverseJoinColumns = @JoinColumn(name = "supplier_id")
+	)
 	List<Supplier> suppliers = new ArrayList<Supplier>();
-	@ManyToMany
+	@ManyToMany(mappedBy = "products")
 	List<Order> orders = new ArrayList<Order>();
 
 	public Product(String name, double price) {

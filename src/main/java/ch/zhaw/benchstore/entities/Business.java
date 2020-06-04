@@ -16,10 +16,25 @@ public class Business {
 	private long employeeCount;
 	private long retailSpace;
 
-	@ManyToMany
+	@OneToMany(
+			mappedBy = "business",
+			cascade = CascadeType.ALL,
+			orphanRemoval = true
+	)
+	private List<Figure> figures = new ArrayList<>();
+
+	@ManyToMany(cascade = {
+			CascadeType.PERSIST,
+			CascadeType.MERGE
+	})
+	@JoinTable(
+			name = "business_order",
+			joinColumns = @JoinColumn(name = "business_id"),
+			inverseJoinColumns = @JoinColumn(name = "order_id")
+	)
 	List<Order> orders = new ArrayList<Order>();
 
-	@ManyToOne
+	@ManyToOne(fetch = FetchType.LAZY)
 	private Owner owner;
 
 	public Business(String name, String address, long employeeCount, long retailSpace, Owner owner) {

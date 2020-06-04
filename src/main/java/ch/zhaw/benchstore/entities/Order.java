@@ -15,13 +15,21 @@ public class Order {
 	private Date dateOfOrder;
 	private Date dateOfDelivery;
 
-	@ManyToMany(mappedBy = "orders")
+	@ManyToMany(cascade = {
+			CascadeType.PERSIST,
+			CascadeType.MERGE
+	})
+	@JoinTable(
+			name = "order_product",
+			joinColumns = @JoinColumn(name = "order_id"),
+			inverseJoinColumns = @JoinColumn(name = "product_id")
+	)
 	List<Product> products = new ArrayList<Product>();
 
 	@ManyToMany(mappedBy = "orders")
 	List<Business> businesses = new ArrayList<Business>();
 
-	@ManyToOne
+	@ManyToOne(fetch = FetchType.LAZY)
 	private Customer customer;
 
 	public Order(Date dateOfOrder, Date dateOfDelivery, Customer customer) {
