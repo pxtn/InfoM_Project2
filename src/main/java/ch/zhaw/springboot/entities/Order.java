@@ -12,20 +12,18 @@ public class Order {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
 
-	private String initiator;
 	private Date dateOfOrder;
 	private Date dateOfDelivery;
 
-	@ManyToMany
+	@ManyToMany(mappedBy = "orders")
 	List<Product> products = new ArrayList<Product>();
-	@ManyToMany
+	@ManyToMany(mappedBy = "orders")
 	List<Business> businesses = new ArrayList<Business>();
 
 	@ManyToOne
 	private Customer customer;
 
-	public Order(String initiator, Date dateOfOrder, Date dateOfDelivery, Customer customer) {
-		this.initiator = initiator;
+	public Order(Date dateOfOrder, Date dateOfDelivery, Customer customer) {
 		this.dateOfOrder = dateOfOrder;
 		this.dateOfDelivery = dateOfDelivery;
 		this.customer = customer;
@@ -34,9 +32,6 @@ public class Order {
 	public Order() {
 	}
 
-	public String getInitiator() {
-		return this.initiator;
-	}
 
 	public Date getDateOfOrder() {
 		return this.dateOfOrder;

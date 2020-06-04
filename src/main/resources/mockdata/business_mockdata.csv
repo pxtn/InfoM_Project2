@@ -1,0 +1,201 @@
+id,name,address,employeeCount,retailSpace
+1,Christiansen-Conn,310 East Park,14,138
+2,Quitzon-Lowe,550 Maryland Hill,3,199
+3,"Sporer, Johnson and Eichmann",94 Heffernan Alley,7,106
+4,Mraz-Kub,3018 Forest Run Street,17,342
+5,"Ondricka, Carter and Ratke",29 Ohio Hill,14,55
+6,"Wisozk, Ledner and Bosco",3851 Straubel Point,10,77
+7,Lubowitz-Sporer,12 Welch Court,16,123
+8,"Kemmer, Gaylord and Swift",9 Warner Circle,5,328
+9,Purdy-Swaniawski,584 4th Avenue,14,332
+10,Swaniawski-Heidenreich,51 Monica Hill,9,88
+11,Senger Inc,853 Dakota Terrace,17,496
+12,"Wintheiser, Torp and Stoltenberg",0158 Susan Circle,7,295
+13,"Schmitt, Russel and Lang",37627 Warrior Way,10,469
+14,Heller Inc,0340 Hovde Parkway,13,80
+15,Rolfson-Herzog,8597 Little Fleur Court,10,96
+16,"Zieme, Larkin and Price",240 Service Way,6,272
+17,"McClure, Medhurst and Ebert",17 1st Plaza,0,454
+18,"Mills, Block and Huels",4678 Kinsman Park,17,185
+19,Labadie-Kunde,61230 Caliangt Hill,20,77
+20,"Balistreri, Bergnaum and Armstrong",3707 Meadow Vale Hill,16,162
+21,Macejkovic and Sons,1 Sutteridge Place,5,172
+22,"Pacocha, Morar and Lehner",6280 Browning Trail,19,191
+23,Schiller Inc,2935 East Court,17,107
+24,"Bartoletti, Kassulke and Hessel",94 Thompson Way,6,20
+25,Beahan-Padberg,44 Bobwhite Crossing,8,135
+26,Schultz and Sons,34847 Shelley Court,19,274
+27,"Lesch, Muller and Muller",5602 Fairfield Crossing,7,61
+28,Labadie-Harber,0368 Park Meadow Center,11,326
+29,Thompson-Kuvalis,8157 Sullivan Point,9,278
+30,"Miller, Lehner and Ziemann",2229 Burning Wood Court,8,265
+31,"Klocko, Larson and Rempel",2 Merrick Park,20,310
+32,Schroeder Inc,57847 Calypso Lane,19,144
+33,"Rohan, Bashirian and Heidenreich",24492 Paget Pass,4,499
+34,Hirthe-Sawayn,084 Bartillon Court,9,223
+35,Vandervort Group,8471 Larry Road,2,232
+36,Shanahan and Sons,263 Hallows Junction,18,96
+37,"Waters, Crooks and Balistreri",426 Drewry Circle,5,172
+38,Rutherford-Runte,541 Northfield Point,12,100
+39,Langosh-Reichert,66857 Parkside Road,16,23
+40,"Kuhlman, Bosco and Rath",81172 Sloan Hill,5,39
+41,"Schneider, Champlin and Bayer",05089 Weeping Birch Center,19,187
+42,"Goldner, Homenick and Hauck",1 Lukken Circle,0,67
+43,Aufderhar Inc,972 American Ash Trail,12,293
+44,"Kub, Brekke and Tillman",08293 Dorton Pass,12,355
+45,O'Conner-Kunde,73498 Glacier Hill Way,8,451
+46,"Glover, Nienow and Tromp",06 Dottie Terrace,19,195
+47,Kihn and Sons,60 Morning Alley,20,67
+48,"Nitzsche, Haag and Gleichner",277 Kennedy Terrace,1,476
+49,Mayert LLC,632 Meadow Ridge Drive,6,286
+50,Price-Lockman,723 Scofield Pass,4,176
+51,"Ledner, Turner and Gislason",7835 Hagan Street,7,206
+52,Yundt-Conn,987 Fordem Pass,19,302
+53,"Mayert, Volkman and Wintheiser",793 Bay Avenue,1,90
+54,"Prohaska, Lueilwitz and Stehr",2 Boyd Road,18,271
+55,"Bechtelar, Ullrich and Morissette",8 Shasta Parkway,6,497
+56,Marquardt LLC,55 Mcguire Lane,9,23
+57,"Schmidt, Kuhlman and Mertz",6600 Troy Alley,16,404
+58,"Turner, Schmidt and Murphy",30 Scoville Plaza,20,169
+59,Sanford-Kiehn,85468 Delaware Parkway,6,287
+60,Veum Inc,482 Mandrake Center,11,306
+61,Ortiz LLC,40458 8th Avenue,13,480
+62,"Davis, Schulist and Aufderhar",52478 Eastwood Way,10,500
+63,Balistreri LLC,27874 Meadow Ridge Circle,2,192
+64,Carroll Inc,511 Larry Terrace,12,149
+65,"Boyle, Williamson and O'Hara",89 Oak Valley Pass,17,491
+66,Cruickshank-Brakus,4 Stoughton Parkway,9,408
+67,Bode-Corwin,82 Tennessee Park,0,94
+68,Zemlak-Nienow,1765 Huxley Drive,6,445
+69,"Little, Hane and McGlynn",85 Heffernan Circle,18,189
+70,Yost LLC,7 Vermont Parkway,3,491
+71,"Bartoletti, Hettinger and Koss",64 Doe Crossing Alley,14,416
+72,Gaylord and Sons,16966 Everett Junction,2,138
+73,Bayer-Eichmann,194 Bellgrove Crossing,15,489
+74,Runolfsdottir-Emmerich,081 3rd Parkway,6,268
+75,Spencer Inc,40556 Bellgrove Terrace,11,183
+76,Hackett LLC,5230 Manitowish Terrace,7,181
+77,"Altenwerth, Steuber and Wolff",109 Ryan Crossing,15,407
+78,Rippin-Swaniawski,961 Chive Plaza,15,474
+79,"Dicki, Kunze and Bosco",796 Russell Alley,15,337
+80,Brakus and Sons,357 Heath Court,7,63
+81,Smitham Inc,27396 John Wall Terrace,4,265
+82,Hegmann and Sons,7 Rieder Hill,16,251
+83,"Hamill, Krajcik and Lakin",03 Debra Junction,18,456
+84,Kris Inc,43032 Gale Park,10,141
+85,Hettinger Group,3724 Kropf Road,1,394
+86,Sawayn-Nicolas,748 Arrowood Way,13,332
+87,"Conroy, Schulist and Mraz",42 Bay Court,17,257
+88,Jenkins Inc,2 Pine View Pass,14,337
+89,Morissette-Leannon,36502 Graceland Plaza,6,414
+90,Mann-Jast,07533 Summerview Point,14,319
+91,Monahan LLC,2146 Tomscot Lane,9,102
+92,Johnson and Sons,8 Red Cloud Court,6,436
+93,"D'Amore, Bednar and Stanton",54307 Waubesa Street,9,69
+94,"Jaskolski, Kling and Lynch",7084 Starling Way,13,346
+95,"Brown, Swaniawski and D'Amore",271 Banding Plaza,19,460
+96,"Lowe, Gerlach and Wunsch",78 Mallard Way,12,63
+97,Lubowitz-O'Kon,33 Granby Trail,14,36
+98,Klein Group,23422 New Castle Junction,9,79
+99,"Orn, Bergstrom and Cassin",84433 Birchwood Plaza,12,321
+100,Gislason Inc,34616 Duke Circle,7,188
+101,"Rodriguez, Konopelski and Jenkins",59 Fulton Pass,3,117
+102,"Ernser, Senger and Connelly",8 Ohio Drive,13,90
+103,Barton-Goldner,879 Fieldstone Circle,3,156
+104,"Jones, Conn and Leffler",15 Basil Point,15,473
+105,Weber Group,842 Porter Trail,1,373
+106,Kshlerin Group,93955 Muir Street,17,478
+107,White Group,071 Holmberg Park,6,473
+108,Walsh and Sons,60 Hagan Street,9,139
+109,Mante-Bauch,5207 Bonner Park,6,200
+110,Reynolds and Sons,86745 Bowman Trail,8,267
+111,Pacocha LLC,574 Dakota Lane,17,82
+112,Stark-O'Reilly,01889 Ruskin Trail,8,367
+113,"Kuhic, McCullough and Harber",66561 Gateway Hill,3,181
+114,Batz-Fisher,53 Troy Place,0,75
+115,Hilpert LLC,78975 Artisan Avenue,19,426
+116,Rau and Sons,4 Harbort Center,3,418
+117,Braun-Pfeffer,87994 Macpherson Hill,13,492
+118,"Durgan, Bashirian and Bartell",4665 Lindbergh Road,8,422
+119,"Hahn, Haley and Ritchie",45145 Dawn Park,17,24
+120,Conn-Sawayn,98892 Ohio Hill,5,387
+121,"Ritchie, Effertz and Mueller",5 3rd Drive,20,205
+122,Mayer and Sons,462 Spenser Junction,17,287
+123,Lemke LLC,9761 Raven Lane,18,210
+124,Klein-Kuhlman,30 Nelson Pass,0,31
+125,Howe and Sons,608 Carpenter Avenue,7,225
+126,Von-Schoen,2931 Roxbury Place,8,391
+127,"Padberg, Parisian and Haley",92541 Union Point,15,37
+128,Legros LLC,3742 East Drive,11,469
+129,Johns Group,11 Farragut Alley,20,286
+130,Gutkowski Group,83404 Pennsylvania Trail,8,151
+131,Koelpin-Koch,0554 Bunting Circle,19,367
+132,Larkin-Hand,7721 Springview Avenue,1,213
+133,Hettinger-White,0905 Farragut Lane,15,68
+134,Breitenberg Group,05 Brown Center,18,26
+135,"Cartwright, Blick and Doyle",90687 Sunbrook Parkway,19,157
+136,Donnelly LLC,2 3rd Parkway,4,154
+137,Oberbrunner and Sons,7778 Leroy Hill,16,124
+138,Metz-Yost,19854 Basil Lane,16,377
+139,Pfeffer and Sons,8 Harper Trail,19,44
+140,Grant-Mraz,354 Bunting Alley,20,190
+141,Ortiz-West,40897 Surrey Way,0,467
+142,Stoltenberg and Sons,9 Westerfield Parkway,7,318
+143,Turner-Farrell,7198 School Pass,11,165
+144,Roob and Sons,84122 Buena Vista Trail,5,347
+145,"Koelpin, Pfannerstill and Becker",6 Drewry Trail,0,69
+146,"Kovacek, Cremin and Dare",1 Duke Drive,2,185
+147,Abernathy-Runte,50 Golden Leaf Alley,4,139
+148,Stoltenberg and Sons,5 Cardinal Park,13,475
+149,Keeling-Medhurst,87 Shoshone Court,14,180
+150,Swift-Yundt,54 Kingsford Trail,19,187
+151,"Williamson, Schneider and Mitchell",0223 Barby Place,20,191
+152,Auer and Sons,8748 Lerdahl Pass,18,157
+153,Stamm-Huels,3 Browning Terrace,16,445
+154,"Macejkovic, Waters and Balistreri",0177 Brown Way,9,122
+155,Keeling and Sons,0 Wayridge Alley,10,141
+156,Rosenbaum-Lynch,68257 Donald Junction,13,146
+157,Thiel-Runolfsson,0034 Dapin Alley,10,231
+158,Rau and Sons,736 Sutherland Circle,17,40
+159,Volkman-Brown,563 Bellgrove Point,11,410
+160,Pollich-Stamm,657 West Parkway,17,122
+161,Bashirian and Sons,1450 Hanover Circle,7,211
+162,"Dare, Keebler and Kuphal",33589 Lien Trail,0,361
+163,"Wisozk, Murazik and Keeling",9 Northport Trail,10,207
+164,"Schamberger, Wilkinson and Moore",90324 Boyd Pass,11,379
+165,Pollich LLC,2 Paget Way,8,225
+166,"Roob, Parisian and Batz",33843 Transport Plaza,4,307
+167,Kovacek-Nader,4 Lunder Pass,6,495
+168,"Cruickshank, Cruickshank and Streich",149 Vidon Trail,3,467
+169,Cummings-Rice,2 Russell Parkway,0,454
+170,Kris Group,61 Lakewood Gardens Court,17,240
+171,Considine-Wilkinson,725 Lukken Point,15,468
+172,Abshire-Gerhold,61 Browning Place,11,99
+173,Jakubowski LLC,79947 Tony Lane,5,440
+174,Jakubowski and Sons,8 Porter Hill,7,290
+175,Goodwin Group,7 Mandrake Crossing,14,204
+176,"Kreiger, Ankunding and Klein",0284 Carberry Trail,0,454
+177,Grant-Aufderhar,864 Eliot Alley,13,349
+178,Lynch-Treutel,78009 Pierstorff Alley,5,428
+179,Ernser-Fadel,79 Sloan Drive,13,489
+180,Kuvalis Group,422 Crownhardt Place,12,436
+181,Miller LLC,23779 High Crossing Plaza,20,338
+182,Rath-Luettgen,3 Corscot Way,17,153
+183,"Nikolaus, Pouros and Lebsack",369 Arkansas Way,12,295
+184,Boehm LLC,14 Mesta Way,1,98
+185,"Heathcote, Howell and Kris",72 Memorial Point,17,414
+186,Bergnaum-Schuster,1632 Gina Road,9,98
+187,Waelchi-McLaughlin,75951 Valley Edge Road,12,311
+188,Walsh Inc,7335 Redwing Way,15,289
+189,Anderson-O'Keefe,325 Pennsylvania Alley,13,449
+190,Schinner LLC,070 Armistice Plaza,17,265
+191,"Howe, Bode and Feil",9451 Briar Crest Avenue,9,35
+192,Schneider LLC,03 Coolidge Street,2,396
+193,Mueller-Lehner,33 Helena Court,17,234
+194,Maggio and Sons,91077 Pennsylvania Road,20,452
+195,"Sanford, Johnson and O'Hara",6 Shelley Terrace,5,385
+196,Mitchell Inc,8072 Warrior Crossing,14,145
+197,"Lakin, Dibbert and Moen",01 Di Loreto Plaza,12,20
+198,"Dare, Daugherty and Metz",17875 Farwell Alley,8,223
+199,Lemke Group,4490 Heath Park,3,292
+200,Tremblay Group,286 Bay Avenue,13,183

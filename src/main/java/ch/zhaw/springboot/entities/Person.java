@@ -5,7 +5,7 @@ import java.sql.Date;
 import java.util.ArrayList;
 import java.util.List;
 
-@Entity
+@MappedSuperclass
 public class Person {
 
 	@Id

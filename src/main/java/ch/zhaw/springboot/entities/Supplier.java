@@ -14,7 +14,7 @@ public class Supplier {
 	private String name;
 	private String address;
 
-	@ManyToMany
+	@ManyToMany(mappedBy = "suppliers")
 	List<Product> products = new ArrayList<Product>();
 
 	public Supplier(String name, String address) {
