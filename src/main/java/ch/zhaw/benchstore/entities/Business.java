@@ -16,7 +16,7 @@ public class Business {
 	private long employeeCount;
 	private long retailSpace;
 
-	@ManyToMany
+	@ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
 	List<Order> orders = new ArrayList<Order>();
 
 	@ManyToOne

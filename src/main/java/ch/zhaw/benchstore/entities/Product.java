@@ -16,10 +16,10 @@ public class Product {
 	private String name;
 	private double price;
 
-	@ManyToMany
+	@ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
 	@JsonIgnore
 	List<Supplier> suppliers = new ArrayList<Supplier>();
-	@ManyToMany
+	@ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
 	@JsonIgnore
 	List<Order> orders = new ArrayList<Order>();
 
