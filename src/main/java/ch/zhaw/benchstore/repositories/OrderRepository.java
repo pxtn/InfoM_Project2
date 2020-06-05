@@ -8,10 +8,10 @@ import java.util.List;
 
 public interface OrderRepository extends JpaRepository<Order, Long> {
 
-    @Query("SELECT ord FROM Order ord WHERE ord.customer.id = ?1")
+    @Query("SELECT cust, ord FROM Order ord JOIN ord.customer cust WHERE cust.id = ?1")
     public List<Order> getOrdersFromCustomerWithId(long id);
 
-    @Query("SELECT ord, DATEDIFF(date_of_delivery, date_of_order) AS deliveryTime FROM Order ord WHERE DATEDIFF(date_of_delivery, date_of_order) > 14")
+    @Query("SELECT ord, DATEDIFF(date_of_delivery, date_of_order) AS deliveryTime FROM Order ord WHERE DATEDIFF(date_of_delivery, date_of_order) > 14 ORDER BY deliveryTime DESC")
     public List<Order> getDelayedOrders();
 
 }
