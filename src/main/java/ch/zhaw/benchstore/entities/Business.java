@@ -19,7 +19,7 @@ public class Business {
 	@ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
 	List<Order> orders = new ArrayList<Order>();
 
-	@ManyToOne
+	@ManyToOne(fetch=FetchType.EAGER)
 	private Owner owner;
 
 	public Business(String name, String address, long employeeCount, long retailSpace, Owner owner) {

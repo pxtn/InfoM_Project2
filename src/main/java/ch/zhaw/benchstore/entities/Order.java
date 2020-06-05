@@ -17,14 +17,14 @@ public class Order {
 	private Date dateOfOrder;
 	private Date dateOfDelivery;
 
-	@ManyToMany(mappedBy = "orders")
+	@ManyToMany(mappedBy = "orders", cascade = {CascadeType.PERSIST, CascadeType.MERGE})
 	List<Product> products = new ArrayList<Product>();
 
-	@ManyToMany(mappedBy = "orders")
+	@ManyToMany(mappedBy = "orders", cascade = {CascadeType.PERSIST, CascadeType.MERGE})
 	@JsonIgnore
 	List<Business> businesses = new ArrayList<Business>();
 
-	@ManyToOne
+	@ManyToOne(fetch=FetchType.EAGER)
 	private Customer customer;
 
 	public Order(Date dateOfOrder, Date dateOfDelivery, Customer customer) {

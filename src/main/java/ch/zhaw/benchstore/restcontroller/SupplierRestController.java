@@ -32,11 +32,6 @@ public class SupplierRestController {
 		return repository.findById(id);
 	}
 
-	@RequestMapping(value = "benchstore/supplier/add", method = RequestMethod.POST)
-	public ResponseEntity<Supplier>  newSupplier(@RequestBody Supplier newSupplier) {
-		return new ResponseEntity<Supplier>(repository.save(newSupplier), HttpStatus.CREATED);
-	}
-
 	@RequestMapping(value = "benchstore/supplier/{id}", method = RequestMethod.DELETE)
 	public void deleteSupplier(@PathVariable Long id) {
 		repository.deleteById(id);

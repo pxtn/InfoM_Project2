@@ -54,11 +54,6 @@ public class OrderRestController {
 		return repository.findById(id);
 	}
 
-	@RequestMapping(value = "benchstore/order/add", method = RequestMethod.POST)
-	public ResponseEntity<Order>  newOrder(@RequestBody Order newOrder) {
-		return new ResponseEntity<Order>(repository.save(newOrder), HttpStatus.CREATED);
-	}
-
 	@RequestMapping(value = "benchstore/order/{id}", method = RequestMethod.DELETE)
 	public void deleteOrder(@PathVariable Long id) {
 		repository.deleteById(id);

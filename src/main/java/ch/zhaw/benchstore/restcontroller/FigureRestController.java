@@ -54,11 +54,6 @@ public class FigureRestController {
 		return repository.findById(id);
 	}
 
-	@RequestMapping(value = "benchstore/figure/add", method = RequestMethod.POST)
-	public ResponseEntity<Figure>  newFigure(@RequestBody Figure newFigure) {
-		return new ResponseEntity<Figure>(repository.save(newFigure), HttpStatus.CREATED);
-	}
-
 	@RequestMapping(value = "benchstore/figure/{id}", method = RequestMethod.DELETE)
 	public void deleteFigure(@PathVariable Long id) {
 		repository.deleteById(id);

@@ -15,7 +15,7 @@ public class Figure {
 	private double advertisementExpenses;
 	private Date date;
 
-	@ManyToOne
+	@ManyToOne(fetch=FetchType.EAGER)
 	private Business business;
 
 	public Figure(double income, double expenses, double advertisementExpenses, Date date, Business business) {
