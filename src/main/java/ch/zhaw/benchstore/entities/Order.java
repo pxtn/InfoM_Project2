@@ -1,5 +1,7 @@
 package ch.zhaw.benchstore.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.sql.Date;
 import java.util.ArrayList;
@@ -19,6 +21,7 @@ public class Order {
 	List<Product> products = new ArrayList<Product>();
 
 	@ManyToMany(mappedBy = "orders")
+	@JsonIgnore
 	List<Business> businesses = new ArrayList<Business>();
 
 	@ManyToOne

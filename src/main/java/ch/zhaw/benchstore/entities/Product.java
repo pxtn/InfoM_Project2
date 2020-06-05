@@ -1,5 +1,7 @@
 package ch.zhaw.benchstore.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -15,8 +17,10 @@ public class Product {
 	private double price;
 
 	@ManyToMany
+	@JsonIgnore
 	List<Supplier> suppliers = new ArrayList<Supplier>();
 	@ManyToMany
+	@JsonIgnore
 	List<Order> orders = new ArrayList<Order>();
 
 	public Product(String name, double price) {
